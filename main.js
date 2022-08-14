@@ -6,9 +6,9 @@
     // make a scissors to beat the paper
 // 2- Get Computer Choice
 // 3- Get Player choice
-// 4- 5 lives to win!
-// 5- Winner greetings!
-// 6- Loser courage
+// 4- Winner greetings!
+// 5- Loser courage
+// 6- 5 lives!
 // 7- Start again
 
 function getComputerChoice() {
@@ -20,38 +20,75 @@ function getComputerChoice() {
 function playRound(playerSelection, computerSelection) {
     switch (true) {
         case (playerSelection === computerSelection):
-            return console.log('Game Tie, please try again.');
+            console.log('Game Tie, please try again.');
             break;
         case (playerSelection === 'rock' && computerSelection === 'scissor'):
             let greetingRock = `You Choose: ${playerSelection} and`;
-            return console.log(`${greetingRock} You Win, Rock beats the scissor`);
+            console.log(`${greetingRock} You Win, Rock beats the scissor`);
             break;
         case (playerSelection === 'rock' && computerSelection === 'paper'):
             let courageRock = `You Choose: ${playerSelection} and`;
-            return console.log(`${courageRock} You Lose, Paper beats the Rock`);
+            console.log(`${courageRock} You Lose, Paper beats the Rock`);
             break;
         case (playerSelection === 'scissor' && computerSelection === 'rock'):
             let courageScissor = `You Choose: ${playerSelection} and`;
-            return console.log(`${courageScissor} You Lose, Rock beats the scissor`);
+            console.log(`${courageScissor} You Lose, Rock beats the scissor`);
             break;
         case (playerSelection === 'scissor' && computerSelection === 'paper'):
             let greetingScissor = `You Choose: ${playerSelection} and`;
-            return console.log(`${greetingScissor} You Win, Scissor beats the Paper`);
+            console.log(`${greetingScissor} You Win, Scissor beats the Paper`);
             break;
         case (playerSelection === 'paper' && computerSelection === 'scissors'):
             let couragePaper = `You Choose: ${playerSelection} and`;
-            return console.log(`${couragePaper} You Lose, Scissor beats the Paper`);
+            console.log(`${couragePaper} You Lose, Scissor beats the Paper`);
             break;
         case (playerSelection === 'paper' && computerSelection === 'rock'):
             let greetingPaper = `You Choose: ${playerSelection} and`;
-            return console.log(`${greetingPaper} You Win, Paper beats the Rock`);
+            console.log(`${greetingPaper} You Win, Paper beats the Rock`);
             break;
     }
 }
-let userValue = prompt('Choose your Item:', '')
-if( userValue == null || userValue == "") {
-    prompt('Please Choose one of: Rock, Paper, scissor')
+
+function getPlayerChoice() {
+    const userValue = prompt('Choose your Item:', '').toLowerCase();
+    if (userValue == null || userValue == '') {
+        prompt('Please choose one of: Rock, Paper, Scissor');
+    }
+    const playerSelection = userValue;
+    const computerSelection = getComputerChoice();
+    console.log(playRound(playerSelection, computerSelection));
 }
-const playerSelection = userValue;
-const computerSelection = getComputerChoice();
-console.log(playRound(playerSelection, computerSelection))
+
+function game() {
+    let playAgain;
+    for (let i = 0; i < 5; i++) {
+        playAgain = getPlayerChoice();
+    }
+}
+game()
+
+// function game() {
+//     const userValue = prompt('Choose your Item:', '').toLowerCase();
+//     if (userValue == null || userValue == '') {
+//         prompt('Please choose one of: Rock, Paper, Scissor');
+//     }
+//     const playerSelection = userValue;
+//     const computerSelection = getComputerChoice();
+//     for (let i = 0; i < 5; i++) {
+//         this.userValue;
+//     }
+// }
+// let userValue = prompt('Choose your Item:', '').toLowerCase();
+// if( userValue == null || userValue == "") {
+//     prompt('Please Choose one of: Rock, Paper, scissor')
+// }
+// const playerSelection = userValue;
+// const computerSelection = getComputerChoice();
+// // console.log(playRound(playerSelection, computerSelection))
+
+
+// function game() {
+//     for ( let i = 0; i < 5; i++ ) {
+//     }
+// }
+// console.log(game());
