@@ -26,12 +26,12 @@ button {
   transition: all .5s;
 }
 
-  button:hover {
-    transform: scale(1.2);
-    transition-duration: .5s;
-    transition-timing-function: linear;
-    background-color: var(--secondaryColor);
-  }
+button:hover {
+  transform: scale(1.2);
+  transition-duration: .5s;
+  transition-timing-function: linear;
+  background-color: var( --secondaryColor);
+}
 
 body {
   margin: 30vh auto;
@@ -45,3 +45,17 @@ body {
   align-items: center;
   gap: 8vh;
 }
+
+#submit {
+  display: block;
+}
+
+#hidden {
+  display: none;
+}
+
+.btnContainer {
+  display: flex;
+  gap: 3vw;
+}
+
