@@ -59,3 +59,8 @@ body {
   gap: 3vw;
 }
 
+#answer {
+  display: block;
+  background-color: lightblue;
+  color: var(--secondaryColor);
+}
