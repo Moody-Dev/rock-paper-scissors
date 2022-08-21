@@ -15,35 +15,47 @@ html {
 /*body {
 }
 */
+
+h1 {
+  font-size: 5.5vh;
+}
+
+
 button {
   font-family: Righteous;
   font-size: 2vh;
   padding: 1.5vh 3vh;
   border: 0px;
-  border-radius: 18px;
+  border-radius: 50px;
   background-color: var(--primaryColor);
   color: white;
   transition: all .5s;
 }
 
-button:hover {
-  transform: scale(1.2);
-  transition-duration: .5s;
-  transition-timing-function: linear;
-  background-color: var( --secondaryColor);
-}
+  button:hover {
+    transform: scale(1.2);
+    transition-duration: .5s;
+    transition-timing-function: linear;
+    background-color: var( --secondaryColor);
+  }
 
 body {
-  margin: 30vh auto;
-  overflow: hidden;
+  /*margin: 30vh auto;*/
+  /*overflow: hidden;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  height: 100vh;
 }
 
 #container {
   display: flex;
-  flex-direction: column;
-  /*justify-content:center;*/
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
   gap: 8vh;
+  text-align: center;
 }
 
 #submit {
@@ -61,6 +73,7 @@ body {
 
 #answer {
   display: block;
-  background-color: lightblue;
   color: var(--secondaryColor);
+  font-size: 12px;
+  line-height: 18px;
 }
