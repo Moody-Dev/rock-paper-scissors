@@ -62,7 +62,7 @@ body {
   display: block;
 }
 
-#hidden {
+.hidden {
   display: none;
 }
 
@@ -71,7 +71,7 @@ body {
   gap: 3vw;
 }
 
-#answer {
+.answer {
   display: block;
   color: var(--secondaryColor);
   font-size: 12px;
