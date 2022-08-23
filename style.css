@@ -40,12 +40,12 @@ button {
   }
 
 body {
-  /*margin: 30vh auto;*/
-  /*overflow: hidden;*/
+  /*margin: 30vh auto;
+  overflow: hidden;*/
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 1;
+  /*flex: 1;*/
   height: 100vh;
 }
 
@@ -58,22 +58,26 @@ body {
   text-align: center;
 }
 
-#submit {
-  display: block;
-}
 
 .hidden {
   display: none;
 }
 
-.btnContainer {
+.buttonContainer {
   display: flex;
-  gap: 3vw;
+  gap: 2vh;
 }
 
-.answer {
-  display: block;
-  color: var(--secondaryColor);
-  font-size: 12px;
-  line-height: 18px;
+#resultContainer {
+  display: flex;
+  gap: 5vh;
+  font-family: Raleway;
+}
+
+#playerScoreContainer {
+  color: var(--primaryColor);
+}
+
+#computerScoreContainer {
+  color: orangered;
 }
