@@ -1,7 +1,7 @@
 const startGame = document.querySelector('#startGame');
 const container = document.querySelector('#container');
-let getPlayerPoints = 0;
-let getComputerPoints = 0;
+let getPlayerPoints = 1;
+let getComputerPoints = 1;
 let gameTie = '';
 
 //Start The Game
